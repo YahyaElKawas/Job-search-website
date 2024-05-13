@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>add / eBook Emporium</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is online book library , enjoy reading with us ">
+    <link rel="stylesheet" href="../CSS_files/SignUpStyle.css">
+
+    <link rel="stylesheet" href="../CSS_files/all.min.css">
+    <link rel="stylesheet" href="../CSS_files/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <a href="../main.html">
+            <img src="../imgs/logo.png" alt="Logo" class="logo">
+          </a>
+        <form action="" method="get" id="signupform">
+            <input type="hidden" value="Mo3GzA">
+            <div>
+                <label>UserName</label>
+                <input type="text" required placeholder="Enter Your UserName" id="username" autofocus required>
+            </div>
+            <br>
+            <div>
+                <label>Password</label>
+                <input type="password" required placeholder="Enter Your password" id="password" minlength="8"
+                    maxlength="20" required>
+            </div>
+            <br>
+            <div>
+                <label>Confirm Password</label>
+                <input type="password" required placeholder="ReEnter Your password" id="repassword" minlength="8"
+                    maxlength="20" required>
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" required placeholder="Enter Your E-Mail" id="email" required>
+            </div>
+            <br>
+
+            <div>
+                <label>are you</label>
+                <select id="userType" required>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="SignUp">
+            </div>
+        </form>
+    </div>
+    <script src="../JavaScript_files/SignUpScript.js"> </script>
+</body>
+
+</html>

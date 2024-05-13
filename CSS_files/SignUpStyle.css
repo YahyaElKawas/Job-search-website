@@ -1,0 +1,113 @@
+:root {
+    --main-color:#ff503f;
+    --secondary-color:#222224;
+    --body-color: #d3d1d1;
+    --section-background:#f6f6f6;
+    --fontLink-color:#ffffff8a;
+    --main-duration: 0.5s;
+    --section-padding: 60px;
+    
+}
+
+*, ::before, ::after{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body{
+    font-family: "Work Sans",sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url('../imgs/mainbackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.72);
+    z-index: -1;
+  }
+
+.logo {
+    width: 50px;
+    height: auto;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 30%;
+    padding: 40px;
+    background-color: var(--section-background);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#choices select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #555;
+}
+
+#choices select:hover,
+#choices select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+input[type="submit"] {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}

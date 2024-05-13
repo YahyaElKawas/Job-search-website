@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+h3 {
+    color: #666;
+}
+
+p {
+    margin: 10px 0;
+    color: #888;
+}
+
+button {
+    color: white;
+    background-color: #666;
+}

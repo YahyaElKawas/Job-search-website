@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS_files/home.css">
+    <!--font awesome library--> 
+    <link rel="stylesheet" href="../CSS_files/all.min.css">
+    <link rel="stylesheet" href="../CSS_files/fontawesome.min.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Wazzaf | Available Jobs</title>
+</head>
+<body>
+    <div class="page-body">
+        <div class="sidebar mainSec">
+            <a href="index.html" class="logo-wrapper">
+                <img src="../imgs/logo.png" alt="Logo" class="logo">
+                <div style="display: flex; flex-direction: column;">
+                    <div class="logoName">Wazzaf</div>
+                    <div class="bio">"Find your Dream Job"</div>
+                </div>
+            </a>
+            <a href="../HTML_files/Jobs'_features.html" class="sideLinks active" id="AvailableJobs">
+                <i class="fa-solid fa-bolt"></i>
+                Available Jobs
+            </a>
+            <a href="#" class="sideLinks">
+                <i class="fa-solid fa-user"></i>
+                Profile
+            </a>
+            <a href="../HTML_files/add_new_job_opportunity.html" class="sideLinks" id="addJobs">
+                <i class="fa-solid fa-plus fa-xl"></i>
+                Add Jobs
+            </a>
+            <div class="bottomLinks">
+                <div class="bdr"></div>
+                <a href="#" class="sideLinks">
+                    <i class="fa fa-gear"></i>
+                    Setting
+                </a>
+                <a href="../main.html" class="sideLinks">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Log out
+                </a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <nav>
+                <div class="">
+                    <form class="search-wrapper" method="get">
+                        <input class="search-element" type="search" id="search-ID" placeholder="Search...">
+                        <button class="search-btn" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="right-item">
+                    <a href="#" class="profile">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="content mainSec">
+                <div class="Add new job opportunity">
+                    <h1>Add new job</h1>
+                    <h3>Please enter job details: </h3>
+                    <p>Enter job id: </p> <input id="jobId" placeholder="Enter job id" type="number">
+                    <p>Enter job title:</p> <input id="jobTitle" placeholder="Enter job title" type="text">
+                    <p>Enter job salary</p> <input id="jobSalary" placeholder="Enter job salary" type="number">
+                    <p>Enter company name</p> <input id="companyName" placeholder="Enter company name" type="text">
+                    <p>Enter job status: </p>
+                    <select>
+                        <option>Open</option>
+                        <option>Closed</option>
+                    </select>
+                    <p>Type job description:</p> <input id="description" class="job_description" placeholder="Type job description">
+                    <p>Enter years of experience</p> <input id="yearsOfExperience" placeholder="Enter years of experience"
+                        type="number">
+                </div>
+                <form id='addJobForm' action="Jobs'_features.html" target="_blank">
+                    <button id='addJobBtn'>Add Job</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../JavaScript_files/add_job.js"></script>
+</body>
+</html>

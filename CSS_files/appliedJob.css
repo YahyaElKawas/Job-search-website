@@ -1,0 +1,161 @@
+/*start variables*/
+:root {
+    --main-color:#ff503f;
+    --secondary-color:#222224;
+    --body-color: #d3d1d1;
+    --section-background:#f6f6f6;
+    --fontLink-color:#ffffff8a;
+    --main-duration: 0.5s;
+    --section-padding: 60px;
+    
+}
+
+
+.applied-Section{
+    padding: 15px;
+    color: var(--fontLink-color);
+}
+
+.titles-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.applyTitle{
+    width: 100px;
+    padding-block: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.applyTitle:hover{
+    color: var(--main-color);
+}
+.titles-container .activeTitle{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.apply-list{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all .3s;
+}
+.apply-list:hover .card:not(:hover){
+    filter: blur(5px);
+    transition: all .3s;
+}
+
+
+/*start card*/
+.card{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ffffff28;
+    border-radius: 10px;
+    cursor: default;
+    transition: all .3s;
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.card:hover .jobName{
+    color: #fff;
+}
+.card:hover .jobDes{
+    color: #ffffffa9;
+}
+.card:hover .jobName{
+    color: #fff;
+}
+.card:hover .item:not(:last-child){
+    color: #fff;
+}
+
+
+
+
+
+.img-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px
+}
+.jobImg{
+    height: 60px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.jobName{
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .3s;
+}
+.jobDes{
+    max-width: 150px;
+    font-size: 11px;
+    color: #ffffff54;
+    transition: all .3s;
+}
+
+.card .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    transition: all .3s;
+}
+.item > div{
+    font-size: 16px;
+    transition: all .3s;
+}
+.item > div:nth-child(2){
+    max-width: 150px;
+    font-size: 12px;
+}
+.card > div:last-child{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+}
+.card > div:last-child div{
+    font-size: 15px;
+}
+
+
+/*Applied*/
+.applied-card{
+    border-color: green;
+
+}
+.applied-card > div:last-child{
+    color: green;
+}
+/*Waiting*/
+.waiting-card{
+    border-color: rgba(255, 0, 0, 0.658);
+    animation: waiting .7s linear infinite alternate;
+    transition: all .3s;
+}
+.waiting-card > div:last-child{
+    color: rgba(255, 0, 0, 0.555);
+}
+.waiting-card .item{
+    align-items: center;
+}
+
+@keyframes waiting {
+    from {opacity: 1;}
+    to {opacity: .5;}
+}
+
+/*end card*/
+

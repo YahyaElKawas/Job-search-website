@@ -1,0 +1,45 @@
+
+
+
+h2 {
+    text-align: center;
+    color: #0f0e0e;
+}
+h3 {
+    color: #f2eff1;
+}
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+
+    color: wheat;
+    border-bottom: 1px solid #e8dfdf;
+    padding-bottom: 10px;
+}
+button {
+    background-color: #f11515;
+    color: #fff;
+    border:#ffffff;
+    padding: 5px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+button:hover {
+    background-color: #006ef5;
+}
+button:visited {
+    background-color: plum;
+}
+
+label {
+    display: block; /* makes the label take a full line */
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
